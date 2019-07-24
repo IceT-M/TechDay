@@ -1,0 +1,36 @@
+{
+	"DeployDescriptor": [
+		{
+			"Property": "RunAs",
+			"Assign": "<REPLACE WITH YOUR USER NAME>"
+		},
+		{
+			"Property": "Application",
+			"Replace": [
+				{
+					"<USER>(.*)": "<REPLACE WITH YOUR USER NAME>$1"
+				}
+			]
+		},
+		{
+			"Property": "SubApplication",
+			"Replace": [
+				{
+					"<USER>(.*)": "<REPLACE WITH YOUR USER NAME>$1"
+				}
+			]
+		},
+		{
+			"Comment": "Changes the name of all folders to match the production standard",
+			"Property": "@",
+			"ApplyOn": {
+				"Type": "Folder"
+			},
+			"Replace": [
+				{
+					"<USER>(.*)": "<REPLACE WITH YOUR USER NAME>$1_PROD"
+				}
+			]
+		}
+	]
+}

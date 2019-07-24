@@ -1,0 +1,19 @@
+{
+	"user30_FTP": {
+		"Type": "ConnectionProfile:FileTransfer:FTP",
+		"TargetCTM": "ctmaws",
+		"TargetAgent": "ncuctm",
+		"HostName": "speedtest.tele2.net",
+		"User": "Anonymous",
+		"Password": "Anonymous",
+		"Passive" : "1"
+	},
+	
+	"user30_LOCAL": {
+		"Type": "ConnectionProfile:FileTransfer:Local",
+		"TargetAgent": "ncuctm",
+		"TargetCTM": "ctmaws",
+		"User": "user30",
+		"Password": "user30"
+	}
+}

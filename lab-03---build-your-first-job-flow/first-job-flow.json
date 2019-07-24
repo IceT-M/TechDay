@@ -1,0 +1,20 @@
+{
+
+	"Defaults" : {
+		"Application": "<USER>",
+		"SubApplication": "<USER>_LAB03"	
+	},
+
+   "<USER>_FIRST_JOB_FLOW": {
+		"Type": "Folder",
+		
+		"EchoJob": {
+			"Type" : "Job:Command",
+			
+			"Command" : "echo hello",
+			"RunAs" : "<USER>"
+		}	
+	}
+		
+}
+

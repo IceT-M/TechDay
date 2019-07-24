@@ -1,0 +1,8 @@
+{
+	"DeployDescriptor": [
+		{
+			"Property": "RunAs",
+			"Assign": "<REPLACE WITH YOUR USER NAME>"
+		}
+	]
+}

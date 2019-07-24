@@ -1,0 +1,27 @@
+{
+	"Defaults": {
+		"Application": "<USER>",
+		"SubApplication": "<USER>_LAB04",
+		"Host": "ncuctm",
+		"RunAs": "user30"
+	},
+
+	"<USER>_LAB03": {
+		"Type": "Folder",
+		
+		"DownloadSampleFile": {
+			"Type": "Job:FileTransfer",
+			"ConnectionProfileSrc": "user30_FTP",
+			"ConnectionProfileDest": "user30_LOCAL",
+			
+			"FileTransfers": [
+				{
+					"Src": "/1GB.zip",
+					"Dest": "/home/user30/",
+					"TransferType": "Binary",
+					"TransferOption": "SrcToDest"
+				}
+			]
+		}
+	}
+}

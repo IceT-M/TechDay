@@ -1,0 +1,45 @@
+{
+
+	"Defaults" : {
+		"Application": "<USER>",
+		"SubApplication": "<USER>_LAB05",
+		"RunAs" : "<USER>"	
+	},
+
+   "<USER>_FIRST_EXAMPLE_FLOW": {
+		"Type": "Folder",
+		
+		"EchoJob": {
+			"Type" : "Job:Command",
+			
+			"Command" : "echo hello"
+		},
+		
+		"ShowFiles": {
+			"Type" : "Job:Command",
+			"Command" : "ls -la"
+		},
+		
+		"WaitJob": {
+			"Type" : "Job:Command",
+			"Command" : "sleep 30"
+		},
+		
+		"PrintCurrentDirectory": {
+			"Type" : "Job:Command",
+			"Command" : "pwd"
+		},
+	
+		"flow1": {
+			"Type":"Flow",
+			"Sequence":["EchoJob", "ShowFiles", "PrintCurrentDirectory"]
+		},
+		
+		"flow2": {
+			"Type":"Flow",
+			"Sequence":["EchoJob", "WaitJob", "PrintCurrentDirectory"]
+		}	
+	}	
+		
+}
+
