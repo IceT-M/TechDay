@@ -6,6 +6,8 @@ For the exercise in this Lab environment, we will be primarily working with an I
 
 You can download the latest version of Eclipse [here](https://www.eclipse.org/)
 
+__NOTE:__ Please choose the Eclipse JEE edition in order to have the right plug-ins pre-installed.
+
 ## Step 2 - Fork this repository
 
 In order to create your own copy of this exercise, please fork this repository to your local account.
@@ -43,7 +45,7 @@ Browse to Launch Configurations (Tip: Type Launch in the search bar for quick na
 
 ![Import run configurations](images/eclipse_import_run_config.png)
 
-Select the directory __external-run-configurations__ from your local git folder for this repository.
+Select the directory __external-run-configurations__ from your local git folder for this repository. Select the subdirectory __Windows__ or __OSX__ depending on your OS. 
 
 ## Step 6 - Import json templates
 
